@@ -1,0 +1,15 @@
+# Ignore all files in the .terraform directory
+**/.terraform/*
+
+# Ignore any .tfstate files and .tfstate.backup files
+*.tfstate
+*.tfstate.backup
+*.terraform.lock*
+
+# Ignore any files in the .terraform and .terraform.d directories at the root of the repository
+/.terraform/*
+/.terraform.d/*
+
+# Ignore any files in the .terraform and .terraform.d directories in any subfolder of the repository
+/**/.terraform/*
+/**/.terraform.d/*
