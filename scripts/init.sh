@@ -45,3 +45,8 @@ terraform apply
  terraform destroy --target module.base-infra.azurerm_cosmosdb_sql_container.deploy_manager_cosmosdb_container
  terraform destroy --target module.base-infra.azurerm_cosmosdb_sql_database.deploy_manager_cosmosdb_db
  terraform destroy --target module.base-infra.azurerm_cosmosdb_account.deploy_manager_cosmosdb
+
+
+ terraform plan -var-file=standard_AzureFrontDoor.tfvars
+ terraform apply -var-file=standard_AzureFrontDoor.tfvars
+ terraform destroy -var-file=standard_AzureFrontDoor.tfvars

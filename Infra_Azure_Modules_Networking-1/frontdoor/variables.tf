@@ -71,35 +71,35 @@ variable "backend_pools" {
 
 
 
-variable "tag_environment"{
-	default =  ""
-	description = "Variable para etiquetar los recursos con el tipo de ambiente"
+variable "tag_environment" {
+  default     = ""
+  description = "Variable para etiquetar los recursos con el tipo de ambiente"
 }
-variable "tag_name_app"{
-	default = ""
-	description = "Variable para etiquetar los recursos con el nombre de la aplicacion"
+variable "tag_name_app" {
+  default     = ""
+  description = "Variable para etiquetar los recursos con el nombre de la aplicacion"
 }
-variable "tag_business_domain"{
-	default = ""
-	description = "Variable para etiquetar los recursos con el tipo de proceso de negocio al cual esta asociada la aplicacion"
+variable "tag_business_domain" {
+  default     = ""
+  description = "Variable para etiquetar los recursos con el tipo de proceso de negocio al cual esta asociada la aplicacion"
 }
-variable "tag_service_domain"{
-	default = ""
-	description = "Variable para etiquetar los recursos con el tipo de proceso de negocio al cual esta asociada la aplicacion"
+variable "tag_service_domain" {
+  default     = ""
+  description = "Variable para etiquetar los recursos con el tipo de proceso de negocio al cual esta asociada la aplicacion"
 }
-variable "tag_business_area"{
-	default = ""
-	description = "Variable para etiquetar los recursos con el nombre del area de negocio a la cual pertenece la aplicacion"
+variable "tag_business_area" {
+  default     = ""
+  description = "Variable para etiquetar los recursos con el nombre del area de negocio a la cual pertenece la aplicacion"
 }
-variable "tag_organizational_units"{
-	default = ""
-	description = "Variable para etiquetar los recursos con el nombre de la unidad organizacional a la cual pertenece la  aplicacion"
-	}
-variable "tag_name_service"{
-	default = "frontdoor"
-	description = "Variable para etiquetar los recursos con el nombre del tipo de servicio desplegado"
+variable "tag_organizational_units" {
+  default     = ""
+  description = "Variable para etiquetar los recursos con el nombre de la unidad organizacional a la cual pertenece la  aplicacion"
 }
-variable "tag_cost"{
-	default = ""
-	description = "Variable para etiquetar los recursos con el nombre de la aplicacion asociado a su control de costos"
+variable "tag_name_service" {
+  default     = "frontdoor"
+  description = "Variable para etiquetar los recursos con el nombre del tipo de servicio desplegado"
+}
+variable "tag_cost" {
+  default     = ""
+  description = "Variable para etiquetar los recursos con el nombre de la aplicacion asociado a su control de costos"
 }
