@@ -50,3 +50,8 @@ terraform apply
  terraform plan -var-file=standard_AzureFrontDoor.tfvars
  terraform apply -var-file=standard_AzureFrontDoor.tfvars
  terraform destroy -var-file=standard_AzureFrontDoor.tfvars
+
+
+ terraform plan -var-file=standard_ServicePlan.tfvars
+ terraform apply -var-file=standard_ServicePlan.tfvars
+ terraform destroy -var-file=standard_ServicePlan.tfvars

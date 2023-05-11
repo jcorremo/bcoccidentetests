@@ -1,8 +1,10 @@
 locals {
+
   front_door_profile_name  = "${var.tags.name_app}-fdprofile-${var.tags.environment}"
   front_door_endpoint_name = "${var.tags.name_app}-fdendpoint-${var.tags.environment}"
   front_door_origin_group  = "${var.tags.name_app}-fdgroup-${var.tags.environment}"
   front_door_origin        = "${var.tags.name_app}-fdorigin-${var.tags.environment}"
+
   azurerm_cdn_frontdoor_origins = flatten([
     for k, v in var.frontdoor_origin_groups : [
       for ik, iv in v.azurerm_cdn_frontdoor_origins : [
